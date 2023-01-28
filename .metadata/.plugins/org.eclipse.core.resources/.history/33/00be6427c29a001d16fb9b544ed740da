@@ -1,0 +1,25 @@
+package DataProviderDemo;
+
+import org.testng.annotations.DataProvider;
+
+import org.testng.annotations.Test;
+
+ 
+public class DataProviderExamples {
+	
+	@DataProvider(name="DataProvider_TestData")
+	public Object[][] DataMethod() {
+		
+		return new Object[][] {{"value1"}, {"TestTwo"}};
+	}
+	
+	@Test(dataProvider = "data-provider" , dataProviderClass = DataProviderExamples3.class)
+	
+	//@Test(dataProvider = "TestData", dataProviderClass = DataProviderExamples3.class)
+	
+	public void testcaseDemo(String Values) {
+		
+		System.out.println("Data is passed from Data Provide : " +Values);
+	}
+
+}

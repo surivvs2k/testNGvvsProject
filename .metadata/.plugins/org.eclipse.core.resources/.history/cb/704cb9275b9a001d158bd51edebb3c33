@@ -1,0 +1,13 @@
+package DataProviderDemo;
+
+import org.testng.annotations.DataProvider;
+
+public class DataProviderExamples {
+	
+	@DataProvider(name="DataProvider_TestData")
+	public Object[][] DataMethod() {
+		
+		return new Object[][] {{"value1"}, {"TestTwo"}};
+	}
+
+}

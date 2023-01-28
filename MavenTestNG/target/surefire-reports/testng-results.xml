@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="22150" started-at="2023-01-22T18:42:22 IST" finished-at="2023-01-22T18:42:44 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="22150" started-at="2023-01-22T18:42:22 IST" finished-at="2023-01-22T18:42:44 IST">
+      <class name="BatchDemo.Sample">
+        <test-method status="PASS" signature="testdemo()[pri:0, instance:BatchDemo.Sample@6f1fba17]" name="testdemo" duration-ms="22109" started-at="2023-01-22T18:42:22 IST" finished-at="2023-01-22T18:42:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdemo -->
+      </class> <!-- BatchDemo.Sample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

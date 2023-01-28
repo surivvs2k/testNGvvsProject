@@ -1,0 +1,3 @@
+MavenTestNG.outdir=/test-output
+MavenTestNG.useProjectJar=false
+eclipse.preferences.version=1

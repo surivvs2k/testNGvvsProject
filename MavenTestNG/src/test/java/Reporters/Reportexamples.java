@@ -1,0 +1,36 @@
+package Reporters;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Reportexamples {
+	
+	
+	@Test
+	public void reporters() {
+		
+		Reporter.log("Setting up the browser and managing the exe file", true);
+		WebDriverManager.chromedriver().setup();
+		
+		Reporter.log("Launching the Chrome Browser \n");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://google.com");
+		
+		driver.manage().window().maximize();
+		
+		String title = driver.getTitle();
+		Reporter.log("current page title is  :" +title, true);
+		
+		
+		driver.quit();
+		
+		
+		
+	}
+
+}
